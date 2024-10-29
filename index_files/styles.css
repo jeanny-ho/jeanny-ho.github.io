@@ -1,0 +1,431 @@
+
+.header {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+}
+.rowtitle {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	background-color: #CCC;
+}
+.list {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.centerlist {
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.reference {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.no_bullets {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.green{
+	color: green;
+}
+.red {
+	color: red;
+}
+.center-red {
+	text-align: center;
+	color: red;
+}
+.button {
+	border:1px solid #000;
+	background:#F00;
+	color:#FFF;
+	font-weight:bold;
+}
+/*
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+*/
+* {
+	margin: 1;
+}
+html, body {
+	height: 99%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -55px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	font-size: 12px;
+	height: 55px; /* .push must be the same height as .footer */
+}
+table.fixed_inline {
+	table-layout: fixed;
+	display: inline-block;
+}
+table.fixed_inline td { 
+	overflow: hidden; 
+}
+table.fixed {
+	table-layout: fixed;
+	border-collapse:collapse;
+}
+table.fixed td { 
+	overflow: hidden; 
+	a span.tooltip {display:none;}
+	a:hover span.tooltip {position:absolute;top:30px;left:20px;display:inline;border:2px solid green;}
+}
+/* Sortable tables */
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):after { 
+    content: " \25B4\25BE" 
+}
+
+.col-1 {display: none; }
+.col1 {display: none; }
+.col2 {display: none; }
+.col3 {display: none; }
+.col4 {display: none; }
+.col6 {display: none; }
+.col7 {display: none; }
+
+table.show-1 .col-1 { display: table-cell; }
+table.show1 .col1 { display: table-cell; }
+table.show2 .col2 { display: table-cell; }
+table.show3 .col3 { display: table-cell; }
+table.show4 .col4 { display: table-cell; }
+table.show6 .col6 { display: table-cell; }
+table.show7 .col7 { display: table-cell; }
+
+table.show0 .col0 { display: none; }
+
+.printOnlyQuickSheet { 
+	display: none;
+}
+
+.printOnlyStudentArea { 
+	display: none;
+}
+
+.printOnlyTutorArea { 
+	display: none;
+}
+
+.printArea { 
+	display: none;
+}
+
+@media print {
+	html, body, head {
+        height: 98%;  
+		font-size: x-small;
+    }
+	//@page {size: landscape}
+}
+
+
+.my-sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+.my-sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):after { 
+    content: " \25B4\25BE" 
+}
+
+.my-sortable td + td {
+  border-left: 1px solid #fff;
+}
+
+.my-sortable td, th {
+  border-bottom: 1px solid #fff;
+  background: #efefef;
+  padding: 1px;
+}
+
+.my-sortable thead tr th {
+  height: 0;
+  line-height: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: transparent;
+  border: none;
+  white-space: nowrap;
+}
+
+.my-sortable tfoot tr td {
+  height: 0;
+  line-height: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: transparent;
+  border: none;
+  white-space: nowrap;
+}
+
+.my-sortable thead tr th div {
+  position: absolute;
+  color: black;
+  padding: 9px;
+  margin-left: -3px;
+  line-height: normal;
+  width: 100%;
+  z-index: 2;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* for Chrome */
+@supports (-webkit-appearance:none) {
+	.my-sortable thead tr th div {
+	  position: absolute;
+	  color: black;
+	  padding: 12px;
+	  margin-left: -3px;
+	  line-height: normal;
+	  width: 100%;
+	  z-index: 2;
+	  text-align: left;
+	  font-weight: bold;
+	}
+}
+
+.my-sortable tfoot tr td div {
+  position: absolute;
+  color: black;
+  padding: 19px;
+  margin-left: -3px;
+  line-height: normal;
+  width: 100%;
+  z-index: 2;
+  text-align: left;
+  font-weight: bold;
+}
+
+.my-sortable tfoot tr td div.c3 {
+  position: absolute;
+  color: black;
+  padding: 19px;
+  margin-left: -3px;
+  line-height: normal;
+  width: 222px;
+  z-index: 2;
+  text-align: center;
+  font-weight: bold;
+}
+
+.my-sortable tfoot tr td div.c4 {
+  position: absolute;
+  color: black;
+  padding: 9px;
+  margin-left: -3px;
+  line-height: normal;
+  width: 80px;
+  z-index: 2;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* for Chrome */
+@supports (-webkit-appearance:none) {
+    .my-sortable tfoot tr td div.c4 {
+	  position: absolute;
+	  color: black;
+	  padding: 10px;
+	  margin-left: -3px;
+	  line-height: normal;
+	  width: 80px;
+	  z-index: 2;
+	  text-align: center;
+	  font-weight: bold;
+	}
+}   
+
+.my-sortable tfoot tr td div.f1 {
+  position: absolute;
+  color: black;
+  padding: 19px;
+  margin-left: -3px;
+  line-height: normal;
+  width: 100%;
+  z-index: 2;
+  text-align: left;
+  font-weight: bold;
+}
+
+.my-sortable tfoot tr td div.f2 {
+  position: absolute;
+  color: black;
+  padding: 19px;
+  margin-left: -3px;
+  line-height: normal;
+  width: 82px;
+  z-index: 2;
+  text-align: center;
+  font-weight: bold;
+}
+
+.my-sortable tfoot tr td div.f3 {
+  position: absolute;
+  color: red;
+  padding: 19px;
+  margin-left: -3px;
+  line-height: normal;
+  width: 222px;
+  z-index: 2;
+  text-align: center;
+  font-weight: normal;
+}
+
+.my-sortable tfoot tr td div.f4 {
+  position: absolute;
+  color: black;
+  padding: 9px;
+  margin-left: -3px;
+  line-height: normal;
+  width: 80px;
+  z-index: 2;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* for Chrome */
+@supports (-webkit-appearance:none) {
+	.my-sortable tfoot tr td div.f4 {
+	  position: absolute;
+	  color: black;
+	  padding: 10px;
+	  margin-left: -3px;
+	  line-height: normal;
+	  width: 80px;
+	  z-index: 2;
+	  text-align: center;
+	  font-weight: bold;
+	}
+}
+
+.my-sortable thead tr th div {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.my-sortable tfoot tr td div {
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+.my-sortable tfoot tr td.f1 {
+  border-top: 1px solid #000;
+}
+
+.my-sortable thead tr th div.c1 {
+  background: lightgray;
+}
+
+.my-sortable tfoot tr td div.c1,
+.my-sortable tfoot tr td div.c3,
+.my-sortable tfoot tr td div.c4 {
+  background: lightgreen;
+}
+
+.my-sortable tfoot tr td div.f1,
+.my-sortable tfoot tr td div.f2,
+.my-sortable tfoot tr td div.f3,
+.my-sortable tfoot tr td div.f4 {
+  background: lightgray;
+}
+
+.my-sortable thead tr th div {
+  top: 0;
+}
+
+.my-sortable tfoot tr td div {
+  bottom: 0;
+}
+
+.my-sortable tfoot tr td div.f1,
+.my-sortable tfoot tr td div.f2,
+.my-sortable tfoot tr td div.f3,
+.my-sortable tfoot tr td div.f4 {
+  bottom: 57px;
+}
+
+.my-sortable thead tr th:first-child div,
+.my-sortable tfoot tr td:first-child div {
+  border-left: none;
+}
+
+.tooltip-block {
+	position: relative;
+	white-space: pre-wrap;
+}
+		
+.tooltip-block:hover:after{
+	border: 1px solid black;
+	padding: 3px 6px;
+	background: white;
+	content: attr(data-title);
+	text-align: left;
+	font-size: 0.8em;
+	position: absolute;
+	width: 450px;
+	right: auto;
+	top: 20px;
+	z-index: 1;
+}
+
+.tooltip-block2 {
+	position: relative;
+	white-space: pre-wrap;
+}
+		
+.tooltip-block2:hover:after{
+	border: 1px solid black;
+	padding: 3px 6px;
+	background: white;
+	content: attr(data-title);
+	text-align: left;
+	font-size: 0.8em;
+	position: absolute;
+	width: 650px;
+	right: -500px;
+	top: 20px;
+	z-index: 1;
+}
+
+.brownHighlight {
+	color: brown;
+	background: PapayaWhip;
+}
+
+.slategrayHighlight {
+	color: SlateGray;
+	background: Lavender;
+}
+
+.oliveHighlight {
+	color: Olive;
+	background: Wheat;
+}
+
+</style>
